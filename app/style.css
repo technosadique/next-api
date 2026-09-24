@@ -30,6 +30,7 @@
     justify-content: center;
     box-sizing: border-box;
     height: 53px;
+    width:100%;
     padding: 0 30px;
     border: none;
     border-radius: 6px;
@@ -233,6 +234,7 @@
     background: #1769e0;
     color: #ffffff;
      text-align: center;
+     font-size: 14;
 }
 
 .list-btn {

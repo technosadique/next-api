@@ -1,7 +1,7 @@
 "use client";
 import './../../style.css';
 import { useState, useEffect, use } from "react";
-import {useRouter} from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 
@@ -35,9 +35,6 @@ export default function Page({ params }) {
             setcompany(result.company);
             setcategory(result.category);
         }
-
-
-
     };
 
     const updateproduct = async () => {
@@ -72,7 +69,7 @@ export default function Page({ params }) {
     }
 
 
-    const router=useRouter();
+    const router = useRouter();
     return (
         <div className="user-form">
             <h1>Update Product</h1>
@@ -122,21 +119,21 @@ export default function Page({ params }) {
 
 
             <div className="product-actions">
-    <button
-        type="button"
-        onClick={updateproduct}
-        className="btn update-btn"
-    >
-        Update Product
-    </button>
+                <button
+                    type="button"
+                    onClick={updateproduct}
+                    className="btn update-btn"
+                >
+                    Update Product
+                </button>
 
-    <Link
-        href="/products"
-        className="btn list-btn"
-    >
-        Product List
-    </Link>
-</div>
+                <Link
+                    href="/products"
+                    className="btn list-btn"
+                >
+                    Product List
+                </Link>
+            </div>
 
 
 

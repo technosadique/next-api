@@ -99,7 +99,7 @@ export default function Page() {
 
 
 
-            <button onClick={addproduct} className="btn">
+            <button onClick={addproduct} className="btn update-btn">
                 Add Product
             </button>
 
