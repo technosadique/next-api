@@ -1,0 +1,367 @@
+.user-form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.user-form h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 53px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnclear {
+    width: 100%;
+    height: 42px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.user-list-container {
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.user-list {
+    width: 100%;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.user-name {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.user-name:hover {
+    color: #0070f3;
+}
+
+.edit-btn {
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: #0070f3;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.edit-btn:hover {
+    background-color: #005bb5;
+}
+
+.product-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-table th {
+    background: #f5f5f5;
+    font-weight: 600;
+}
+
+.product-table tr:hover {
+    background: #f9f9f9;
+}
+
+.user-name {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.user-name:hover {
+    text-decoration: underline;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #0070f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background: #005bb5;
+}
+
+.product-detail {
+    min-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail h1 {
+    margin: 0 0 25px;
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.product-info {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.product-row:last-child {
+    border-bottom: none;
+}
+
+.product-row span {
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-row strong {
+    color: #222;
+    font-size: 16px;
+    text-align: right;
+    word-break: break-word;
+}
+
+.product-row:nth-child(even) {
+    background: #fafafa;
+}
+
+.product-row:hover {
+    background: #f3f7ff;
+}
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.update-btn {
+    background: #1769e0;
+    color: #ffffff;
+     text-align: center;
+}
+
+.list-btn {
+    background: #6c757d;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .product-detail {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .product-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .product-row strong {
+        text-align: left;
+    }
+}
+
+.home-page {
+    min-height: 100vh;
+    background: #f4f6f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.home-container {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #222;
+    font-weight: 700;
+}
+
+.home-header p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 16px;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.home-card {
+    display: block;
+    padding: 35px 25px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background: #fff;
+    transition: all 0.25s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.home-card .card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.add-card .card-icon {
+    background: #e8f1ff;
+    color: #1769e0;
+}
+
+.products-card .card-icon {
+    background: #e8f8ee;
+    color: #198754;
+}
+
+.home-card h2 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    color: #222;
+}
+
+.home-card p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .home-container {
+        padding: 30px 20px;
+    }
+
+    .home-header h1 {
+        font-size: 26px;
+    }
+
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+}
