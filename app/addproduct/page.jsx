@@ -18,7 +18,8 @@ export default function Page() {
         alert("Please fill all fields");
         return;
     }
-        let data = await fetch("http://localhost:3000/api/products", {
+    //let data = await fetch("http://localhost:3000/api/products", {    
+    let data = await fetch(`${base}/api/products`, {
             method: "POST",
             body: JSON.stringify({ name, price, color, company, category })
         });

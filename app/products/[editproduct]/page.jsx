@@ -22,8 +22,8 @@ export default function Page({ params }) {
 
 
     const getproductdetails = async () => {
-
-        let data = await fetch(`http://localhost:3000/api/products/${editproduct}`);
+        const base = process.env.NEXT_PUBLIC_BASE_URL; // http://localhost:3000 locally
+        let data = await fetch(`${base}/api/products/${editproduct}`);
         data = await data.json();
         console.log(data);
 
@@ -45,7 +45,8 @@ export default function Page({ params }) {
             alert("Please fill all fields");
             return;
         }
-        let data = await fetch(`http://localhost:3000/api/products/${editproduct}`, {
+        const base = process.env.NEXT_PUBLIC_BASE_URL; // http://localhost:3000 locally
+        let data = await fetch(`${base}/api/products/${editproduct}`, {
             method: "PUT",
             body: JSON.stringify({ name, price, color, company, category })
         });

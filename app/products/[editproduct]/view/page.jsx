@@ -1,6 +1,7 @@
 import './../../../style.css';
 async function getProduct(id) {
-    let data = await fetch(`http://localhost:3000/api/products/${id}`);
+    const base = process.env.NEXT_PUBLIC_BASE_URL; // http://localhost:3000 locally
+    let data = await fetch(`${base}/api/products/${id}`);
     data = await data.json();
     return data.result;
 }
