@@ -1,7 +1,7 @@
 "use client";
 import './../style.css';
 import { useState } from "react";
-
+import {useRouter} from 'next/navigation';
 
 
 export default function Page() {
@@ -11,15 +11,14 @@ export default function Page() {
     const [company, setcompany] = useState('');
     const [category, setcategory] = useState('');
 
-
-
     const addproduct = async () => {
         if (!name || !price || !color || !company || !category) {
         alert("Please fill all fields");
         return;
     }
-    //let data = await fetch("http://localhost:3000/api/products", {    
-    let data = await fetch(`${base}/api/products`, {
+    //let data = await fetch("http://localhost:3000/api/products", { 
+      const base = process.env.NEXT_BASE_URL; // http://localhost:3000 locally
+     let data = await fetch(`/api/products`, {
             method: "POST",
             body: JSON.stringify({ name, price, color, company, category })
         });
@@ -33,6 +32,8 @@ export default function Page() {
             setcolor("");
             setcompany("");
             setcategory("");
+
+            router.push('/products');
             
         } else {
             alert("Error: " + responseData.message);
@@ -48,6 +49,8 @@ export default function Page() {
             setcategory("");
     }
 
+
+    const router=useRouter();
     return (
         <div className="user-form">
             <h1>Add New Product</h1>
