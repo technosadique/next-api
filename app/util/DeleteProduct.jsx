@@ -6,7 +6,7 @@ export default function DeleteProduct(props) {
     console.log(id);
 
     const deleteproduct = async () => { 
-        const base = process.env.NEXT_PUBLIC_BASE_URL; // http://localhost:3000 locally      
+        const base = process.env.NEXT_BASE_URL; // http://localhost:3000 locally      
         let result = await fetch(`${base}/api/products/` + id, {
             method: "DELETE"
         }

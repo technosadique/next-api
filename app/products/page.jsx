@@ -2,7 +2,7 @@ import Link from "next/link";
 import './../style.css';
 import DeleteProduct from "../util/DeleteProduct";
 async function getProducts() {
-    const base = process.env.NEXT_PUBLIC_BASE_URL; // http://localhost:3000 locally
+    const base = process.env.NEXT_BASE_URL; // http://localhost:3000 locally
     let data = await fetch(`${base}/api/products`,{cache:"no-cache"});
     data = await data.json();
     return data.result;
